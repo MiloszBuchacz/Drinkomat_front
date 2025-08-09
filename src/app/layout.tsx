@@ -7,7 +7,7 @@ import signinBackgroundPhoto_small from "../../public/backgroundPhotos/Drinkomat
 
 export const metadata: Metadata = {
   title: "Drinkomat",
-  description: "siema zmień to",
+  description: "Drinkomat app",
 };
 
 export default function RootLayout({
