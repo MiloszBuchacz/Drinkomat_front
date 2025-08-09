@@ -1,0 +1,32 @@
+.mainContainer {
+  width: 7rem;
+  height: 4rem;
+  background-color: #dcdcdc;
+  border-radius: 0px 0px 1rem 1rem;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-corner {
+  position: absolute;
+  top: 0;
+  right: -40px;
+  height: 40px;
+  width: 40px;
+  border-top-left-radius: 50%;
+  box-shadow: -22px -1px 0px 0px #dcdcdc;
+  background: transparent;
+}
+
+.left-corner {
+  position: absolute;
+  top: 0px;
+  left: -40px;
+  height: 40px;
+  width: 40px;
+  border-top-right-radius: 50%;
+  box-shadow: 22px -1px 0px 0px #dcdcdc;
+  background: transparent;
+}
