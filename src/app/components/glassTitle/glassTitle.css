@@ -1,7 +1,7 @@
 .mainContainer {
   width: 7rem;
   height: 4rem;
-  background-color: #dcdcdc;
+  background-color: white;
   border-radius: 0px 0px 1rem 1rem;
   position: absolute;
   display: flex;
@@ -16,7 +16,7 @@
   height: 40px;
   width: 40px;
   border-top-left-radius: 50%;
-  box-shadow: -22px -1px 0px 0px #dcdcdc;
+  box-shadow: -22px -1px 0px 0px white;
   background: transparent;
 }
 
@@ -27,6 +27,6 @@
   height: 40px;
   width: 40px;
   border-top-right-radius: 50%;
-  box-shadow: 22px -1px 0px 0px #dcdcdc;
+  box-shadow: 22px -1px 0px 0px white;
   background: transparent;
 }

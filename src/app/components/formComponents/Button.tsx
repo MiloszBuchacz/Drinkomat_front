@@ -10,7 +10,7 @@ const Button = ({ children, customStyles, className }: ButtonProps) => {
   return (
     <>
       <button
-        className={`border-0 rounded-4xl w-full h-15 bg-[#dcdcdc] ${className}`}
+        className={`border-0 rounded-4xl w-full h-15 bg-white ${className}`}
         style={customStyles}
       >
         {children}

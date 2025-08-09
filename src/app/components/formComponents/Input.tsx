@@ -59,14 +59,14 @@ const Input = ({
   return (
     <div className="w-full relative" style={containerStyle}>
       <input
-        className="p-4 placeholder-white outline-none focus:border-3 border-2 rounded-4xl w-full h-15 border-[#bbc6cc] text-white"
+        className="p-4 placeholder-white outline-none focus:border-3 border-2 rounded-4xl w-full h-15 border-white text-white"
         type={type}
         defaultValue={defaultValue}
         placeholder={placeholder}
         style={style}
         onChange={(e) => onChange(e)}
       />
-      <span className="material-symbols-outlined absolute right-8 top-4 text-[#bbc6cc] ">
+      <span className="material-symbols-outlined absolute right-8 top-4 text-white ">
         {icon}
       </span>
     </div>

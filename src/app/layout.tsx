@@ -1,9 +1,13 @@
 import type { Metadata } from "next";
 import { LazyImage } from "./Utilis";
-import "./globals.css";
 
-import signinBackgroundPhoto from "../../public/backgroundPhotos/Drinkomat_main_background.png";
-import signinBackgroundPhoto_small from "../../public/backgroundPhotos/Drinkomat_main_background_small.png";
+import Image from "next/image";
+
+import signinBackgroundPhoto from "../../public/backgroundPhotos/Drinkomat_main_background2.png";
+import signinBackgroundPhoto_small from "../../public/backgroundPhotos/Drinkomat_main_background_small2.jpg";
+import drinkomat_logo from "../../public/drinkomat/Drinkomat.png";
+
+import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Drinkomat",
@@ -25,11 +29,20 @@ export default function RootLayout({
         />
       </head>
       <body>
-        {children}
-        <LazyImage
-          image={signinBackgroundPhoto}
-          smallImage={signinBackgroundPhoto_small}
-        />
+        <div className="absolute z-1 left-1/2 -translate-x-1/2 -translate-y-1/2 top-12">
+          <Image
+            className="w-[12rem]"
+            alt="drinkomatLogo"
+            src={drinkomat_logo}
+          />
+        </div>
+        <div className="fixed inset-0">
+          <LazyImage
+            image={signinBackgroundPhoto}
+            smallImage={signinBackgroundPhoto_small}
+          />
+          {children}
+        </div>
       </body>
     </html>
   );
